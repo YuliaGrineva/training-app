@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { initializeApp } from 'firebase/app';
 
 
 @Component({
@@ -8,6 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   password: string = '';
+
+  
 
   onButtonClick() {
     this.password = "my password"
