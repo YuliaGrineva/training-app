@@ -22,7 +22,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import {AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from '../environments/environment';
 import { initializeApp } from 'firebase/app';
-
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 
 
@@ -52,7 +52,8 @@ import * as firebase from 'firebase/app';
     FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    AngularFireAuthModule
   ],
   providers: [AuthService, TrainingService],
   bootstrap: [AppComponent],
