@@ -25,8 +25,8 @@ import { initializeApp } from 'firebase/app';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 
-
 import * as firebase from 'firebase/app';
+import { UIService } from './shared/ui.service';
 
 
 @NgModule({
@@ -55,7 +55,7 @@ import * as firebase from 'firebase/app';
     AngularFirestoreModule,
     AngularFireAuthModule
   ],
-  providers: [AuthService, TrainingService],
+  providers: [AuthService, TrainingService, UIService],
   bootstrap: [AppComponent],
   entryComponents: [StopTrainingComponent]
 })
