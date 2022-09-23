@@ -1,11 +1,12 @@
 import {NgModule} from '@angular/core';
 import { SignupComponent } from './signup/signup.component';
 import {LoginComponent } from './login/login.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { SharedModule } from '../shared/shared.module';
 import { AuthRoutingModule } from './auth-routing.module';
-import { MaterialModule } from '../material.module';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
     declarations: [
@@ -18,8 +19,9 @@ import { MaterialModule } from '../material.module';
         AngularFireAuthModule,
         SharedModule,
         AuthRoutingModule,
-        FormsModule,
-        MaterialModule
+        CommonModule,
+        BrowserModule
+    
     ]
 })
 export class AuthModule {
